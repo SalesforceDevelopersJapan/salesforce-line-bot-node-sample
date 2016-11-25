@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "ejs": "2.4.1",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "body-parser": "1.15.2",
+    "jsforce": "1.7.1",
+    "mongodb": "2.2.11",
+    "request": "2.78.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heroku/node-js-getting-started.git"
+    "url": "git+https://github.com/SalesforceDevelopersJapan/salesforce-line-bot-node-sample.git"
   },
   "keywords": [
     "node",
@@ -30,9 +34,6 @@
     "mongodb": "^2.2.11",
     "request": "^2.78.0"
   },
-  "bugs": {
-    "url": "https://github.com/heroku/node-js-getting-started/issues"
-  },
-  "homepage": "https://github.com/heroku/node-js-getting-started#readme",
+  "homepage": "https://github.com/SalesforceDevelopersJapan/salesforce-line-bot-node-sample#readme",
   "author": "SalesforceDevelopersJapan"
 }
