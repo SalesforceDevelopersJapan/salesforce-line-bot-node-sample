@@ -81,7 +81,7 @@ heroku上の環境変数をローカルの環境変数にロードするシェ�
 
 
 ###アプリケーションのカスタマイズ
-プログラムファイルはindex.js, app/main.js, , app/salesforce.js, app/line.jsになりますので、自由にカスタマイズしてみてください。
+アプリケーションファイルはindex.js, app/main.js, app/salesforce.js, app/line.jsになります。自由にカスタマイズしてみてください。
 
 
 ###ローカル環境でのアプリケーション起動
