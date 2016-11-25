@@ -1,0 +1,46 @@
+{
+    "name": "Salesforce LINE BOT sample",
+    "description": "A Node.js app using Express, MongoDB, JSForce",
+    "repository": "https://github.com/misu007/salesforce-line-bot-sample",
+    "logo": "https://static.line.naver.jp/line_regulation/files/ver2/LINE_Icon.png",
+    "keywords": [
+	"node",
+	"express",
+	"mongodb",
+	"line-bot",
+	"salesforce",
+	"heroku",
+	"jsforce"
+    ],
+    "env": {
+        "APP_NAME" : {
+	    "description": "Please enter this heroku app name again.",
+	    "required": "true"
+	},
+	"LINE_APP_ACCESS_TOKEN" : {
+	    "description": "Access token of your LINE business account. For details https://developers.line.me/in_app_web/api-reference ",
+	    "required": "true"
+	},
+        "LINE_CHANNEL_SECRET" : {
+	    "description": "Secret key of your LINE channel. For details https://developers.line.me/in_app_web/api-reference ",
+	    "required": "true"
+	},
+	"SFDC_APP_CLIENT_ID" : {
+	    "description": "Client ID of your Salesforce App. For details refer to https://help.salesforce.com/articleView?id=connected_app_edit.htm ",
+	    "required": "true"
+	},
+	"SFDC_APP_CLIENT_SECRET" : {
+	    "description": "Client secret of your Salesforce App. For details refer to https://help.salesforce.com/articleView?id=connected_app_edit.htm ",
+	    "required": "true"
+	},
+        "SFDC_APP_API_VERSION" : {
+	    "description": "Version information when callout Salesforce API",
+	    "required": "true",
+	    "value": "/services/data/v38.0"
+	}
+    },
+    "addons": [
+	"mongolab"
+    ],
+    "image": "heroku/nodejs"
+}

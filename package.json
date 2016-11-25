@@ -1,0 +1,38 @@
+{
+  "name": "salesforce-line-bot-node-sample",
+  "version": "0.2.5",
+  "description": "A sample Node.js LINE BOT app connect to Salesforce",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heroku/node-js-getting-started.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.13.3",
+    "jsforce": "^1.7.1",
+    "mongodb": "^2.2.11",
+    "request": "^2.78.0"
+  },
+  "bugs": {
+    "url": "https://github.com/heroku/node-js-getting-started/issues"
+  },
+  "homepage": "https://github.com/heroku/node-js-getting-started#readme",
+  "author": "SalesforceDevelopersJapan"
+}
