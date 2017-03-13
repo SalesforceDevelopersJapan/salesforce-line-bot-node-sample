@@ -208,8 +208,9 @@ function nextPageNotification(count, thisPage, postBack, searchWord){
 	'';
     return elmTemplate(
         '次のページを表示しますか？',
-        elmConfirm(thisPage + 'ページ目 / 全' + Math.ceil(parseInt(count)/5) + 'ページ\n\n【Tips】検索ワードをメッセージ送信することで、表示結果を絞り込むことができます。', [
-            elmPostbackAction('次ページを表示', postBack + '#' + searchParam + 'page=' + (parseInt(thisPage) + 1))
+        elmConfirm('' + thisPage + 'ページ目 / 全' + Math.ceil(parseInt(count)/5) + 'ページ\n\n次ページを表示しますか？\n\n【Tips】検索ワードをメッセージ送信することで、表示結果を絞り込むことができます。', [
+            elmPostbackAction('はい', postBack + '#' + searchParam + 'page=' + (parseInt(thisPage) + 1)),
+            elmPostbackAction('いいえ', postBack + '#' + searchParam + 'page=' + (parseInt(thisPage)))
         ])
     );
 }
@@ -257,15 +258,15 @@ function elmButtons(thumbnailImageUrl, title, text, actions){
     return {
         'type' : 'buttons',
         'thumbnailImageUrl' : thumbnailImageUrl,
-        'title' : title,
-        'text' : text,
+        'title' : shrink(title, 40),
+        'text' : shrink(text, 60),
         'actions' : actions
     };
 }
 function elmConfirm(text, actions){
     return {
         'type' : 'confirm',
-        'text' : text,
+        'text' : shrink(text, 240),
         'actions' : actions
     };
 }
